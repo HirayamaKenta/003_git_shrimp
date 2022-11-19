@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*↓スムーススクロール */
+html {
+  scroll-behavior: smooth;
+}
+
+/*↑スムーススクロール */
+
+/* ↓青ボタン中 */
+.btnsetb {
+  @apply mr-4 bg-blue-700 h-5 md:h-auto
+  font-bold text-xs md:text-lg text-center
+  hover:border-blue-700 hover:bg-white hover:text-blue-700
+}
+
+/* ↑青ボタン中 */
+
+
+
+/* ↓緑ボタン中 */
+.btnsetg {
+  @apply mr-4 bg-green-500 h-5 md:h-auto
+  font-bold text-xs md:text-lg text-center
+  hover:border-green-500 hover:bg-white hover:text-green-500
+}
+
+/* ↑緑ボタン中 */
+
+/* ↓オレンジ中ボタン */
+.btnseto {
+  @apply mr-4 bg-orange-500 h-5 md:h-auto
+  font-bold text-xs md:text-lg text-center
+  hover:border-orange-500 hover:bg-white hover:text-orange-500
+}
+
+/* ↑オレンジボタン中 */
+
+
+
+/* ↓赤ボタン中 */
+.btnsetr {
+  @apply mr-4 bg-red-600 h-5 md:h-auto
+  font-bold text-xs md:text-lg text-center
+  hover:border-red-600 hover:bg-white hover:text-red-600
+}
+
+/* ↑赤ボタン中 */
+
+
+
+/* ↓ピンクボタン中 */
+.btnsetp {
+  @apply mr-4 bg-red-400 h-5 md:h-auto
+  font-bold text-xs md:text-lg text-center
+  hover:border-red-400 hover:bg-white hover:text-red-400
+}
+
+/* ↑ピンクボタン中 */
+
+
+
+
+.badge {
+  display: inline-block;
+  color: #fff;
+  padding: 0.2rem 0.6rem;
+  border-radius: 1rem;
+  font-size: 0.6rem;
+  text-align: center;
+  white-space: nowrap;
+  background-color: green;
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+.h-100 {
+  height: 28rem
+    /* 384px */
+  ;
+}
