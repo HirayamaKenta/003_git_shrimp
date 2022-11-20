@@ -5,7 +5,7 @@
       <span class="text-yellow-200">
       {{$user->name}}
       </span>
-      」でログイン中
+      」でログイン中2022/11/20
     </p>
     <div>
       <x-button class="ml-2 btnsetb" onclick="location.reload();">更新ボタン</x-button>
