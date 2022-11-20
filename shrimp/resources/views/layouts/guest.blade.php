@@ -15,7 +15,7 @@
 </head>
 <body>
   <div class="font-sans text-gray-900 antialiased
-  bg-red-100 h-screen">
+  bg-red-100 h-auto md:h-screen pb-5">
         {{--↓ロゴ追加--}}
         <a href="{{route('top')}}">
           <img src="{{asset('logo/shrimp.png')}}" style="max-height:50px;">

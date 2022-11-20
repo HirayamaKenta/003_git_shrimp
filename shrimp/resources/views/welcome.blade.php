@@ -1,7 +1,8 @@
 <x-guest-layout>
 <hr class="border-lime-500 border-b-4">
 
-<div class="md:flex md:flex-row-reverse md:items-center md:justify-center
+<div class="md:flex md:flex-row-reverse md:items-center
+md:justify-center
             md:mt-36" >
 
 <div class="mt-16 md:w-2/5">
