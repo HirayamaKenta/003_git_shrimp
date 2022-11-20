@@ -29,7 +29,7 @@
         md:px-6 lg:px-12
         font-semibold  text-white  text-xs md:text-2xl
           flex whitespace-nowrap justify-between md:justify-start
-          leading-tight h-4 md:h-auto">
+          leading-tight h-4 md:h-auto items-center">
         {{ $header }}
         </div>
         <x-validation-errors class="" :errors="$errors" />
