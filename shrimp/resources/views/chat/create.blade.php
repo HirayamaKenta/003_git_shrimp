@@ -43,7 +43,7 @@
                     </p>
       </div>
       <a href="{{route('chat.edit', $chat)}}">
-        <x-button class="bg-red-600 float-right
+        <x-button class="bg-red-600 float-right text-xs
                                           rounded-full" onClick="return confirm('本当に削除しますか？');">
           削除
         </x-button>
@@ -88,7 +88,7 @@
       </div>
       <div class="block">
         <a href="{{route('chat.edit', $chat)}}">
-          <x-button class="bg-red-700 float-right
+          <x-button class="bg-red-700 float-right text-xs
                               rounded-full" onClick="return confirm('本当に削除しますか？');">
             削除
           </x-button>
