@@ -33,6 +33,7 @@ class AuthenticatedSessionController extends Controller
     {
       // ブランチテスト1
       // ブランチテスト2
+      // ブランチテスト3
         // ↓パスコード認証追加分
         if ($request->passcode !== "05110511") {
             return redirect()->back()->with("message", "passcodeは制作者に提示されたものを打ち込んでください。");
