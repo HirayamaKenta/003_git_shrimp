@@ -17,7 +17,6 @@ class AuthenticatedSessionController extends Controller
      */
     public function create()
     {
-      // Versionの確認1_2025/01/18 14:01
         return view('auth.login');
     }
 
