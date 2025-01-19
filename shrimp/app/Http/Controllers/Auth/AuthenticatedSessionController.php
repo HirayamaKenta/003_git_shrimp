@@ -28,6 +28,9 @@ class AuthenticatedSessionController extends Controller
     // testブランチでの変更2
     // メインでの変更20250119_1436
     // メインでの変更20250119_1518
+
+    // メインでの変更20250119_1554
+
     return view('auth.login');
   }
 
