@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthenticatedSessionController extends Controller
 {
+
     /**
      * Display the login view.
      *
@@ -23,49 +24,52 @@ class AuthenticatedSessionController extends Controller
       // Versionの確認4_2025/01/19 13:41
       // Versionの確認5_2025/01/19 13:48
       // Versionの確認6_2025/01/19 13:49
+      // testブランチでの変更1
+    // testブランチでの変更2
       // メインでの変更20250119_1436
         return view('auth.login');
     }
 
-    /**
-     * Handle an incoming authentication request.
-     *
-     * @param  \App\Http\Requests\Auth\LoginRequest  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function store(LoginRequest $request)
-    {
-      // ブランチテスト1
-      // ブランチテスト2
-      // ブランチテスト3
-        // ↓パスコード認証追加分
-        if ($request->passcode !== "05110511") {
-            return redirect()->back()->with("message", "passcodeは制作者に提示されたものを打ち込んでください。");
-        }
-        // ↑パスコード認証追加分
 
-
-        $request->authenticate();
-
-        $request->session()->regenerate();
-
-        return redirect()->intended(RouteServiceProvider::HOME);
+  /**
+   * Handle an incoming authentication request.
+   *
+   * @param  \App\Http\Requests\Auth\LoginRequest  $request
+   * @return \Illuminate\Http\RedirectResponse
+   */
+  public function store(LoginRequest $request)
+  {
+    // ブランチテスト1
+    // ブランチテスト2
+    // ブランチテスト3
+    // ↓パスコード認証追加分
+    if ($request->passcode !== "05110511") {
+      return redirect()->back()->with("message", "passcodeは制作者に提示されたものを打ち込んでください。");
     }
+    // ↑パスコード認証追加分
 
-    /**
-     * Destroy an authenticated session.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function destroy(Request $request)
-    {
-        Auth::guard('web')->logout();
 
-        $request->session()->invalidate();
+    $request->authenticate();
 
-        $request->session()->regenerateToken();
+    $request->session()->regenerate();
 
-        return redirect('/');
-    }
+    return redirect()->intended(RouteServiceProvider::HOME);
+  }
+
+  /**
+   * Destroy an authenticated session.
+   *
+   * @param  \Illuminate\Http\Request  $request
+   * @return \Illuminate\Http\RedirectResponse
+   */
+  public function destroy(Request $request)
+  {
+    Auth::guard('web')->logout();
+
+    $request->session()->invalidate();
+
+    $request->session()->regenerateToken();
+
+    return redirect('/');
+  }
 }
