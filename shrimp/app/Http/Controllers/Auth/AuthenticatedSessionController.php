@@ -21,6 +21,7 @@ class AuthenticatedSessionController extends Controller
       // Versionの確認2_2025/01/18 14:40
       // Versionの確認3_2025/01/18 14:40
       // Versionの確認4_2025/01/19 13:41
+      // Versionの確認5_2025/01/19 13:48
         return view('auth.login');
     }
 
