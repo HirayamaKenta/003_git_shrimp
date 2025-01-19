@@ -11,24 +11,24 @@ use Illuminate\Support\Facades\Auth;
 class AuthenticatedSessionController extends Controller
 {
 
-    /**
-     * Display the login view.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function create()
-    {
-      // Versionの確認1_2025/01/18 14:01
-      // Versionの確認2_2025/01/18 14:40
-      // Versionの確認3_2025/01/18 14:40
-      // Versionの確認4_2025/01/19 13:41
-      // Versionの確認5_2025/01/19 13:48
-      // Versionの確認6_2025/01/19 13:49
-      // testブランチでの変更1
+  /**
+   * Display the login view.
+   *
+   * @return \Illuminate\View\View
+   */
+  public function create()
+  {
+    // Versionの確認1_2025/01/18 14:01
+    // Versionの確認2_2025/01/18 14:40
+    // Versionの確認3_2025/01/18 14:40
+    // Versionの確認4_2025/01/19 13:41
+    // Versionの確認5_2025/01/19 13:48
+    // Versionの確認6_2025/01/19 13:49
+    // testブランチでの変更1
     // testブランチでの変更2
-      // メインでの変更20250119_1436
-        return view('auth.login');
-    }
+    // メインでの変更20250119_1436
+    return view('auth.login');
+  }
 
 
   /**
